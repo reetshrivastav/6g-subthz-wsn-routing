@@ -1,0 +1,4 @@
+Model,Scenario,PDR (%),Avg Delay (hops),Lifetime (rounds),Lifetime Std,Alive at End,Throughput (pkt/rnd)
+Model A (Base Paper - Alanazi),"Standard (40 Nodes, 40m)",36.8 ± 4.3,6.04 ± 0.50,82.3 ± 11.8,11.846237095944574,36.0,11.0
+Model B (Senior - Rahul Anand),"Standard (40 Nodes, 40m)",59.7 ± 12.6,3.40 ± 0.50,62.3 ± 20.1,20.108041509140897,36.3,17.9
+Model C (Extension MVP - Ours),"Standard (40 Nodes, 40m)",62.8 ± 15.0,3.18 ± 0.22,41.0 ± 9.2,9.16515138991168,35.0,18.8

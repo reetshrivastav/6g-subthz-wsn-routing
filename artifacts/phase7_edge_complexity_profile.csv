@@ -1,0 +1,4 @@
+Model,Predictor_Params,Predictor_Size_KB,Policy_Params,Policy_Size_KB,Total_Params,Total_Storage_KB,PerHop_Latency_us,PerHop_Latency_ms,Memory_Footprint,Edge_MCU_Class
+Model A (Alanazi Tabular Q),0,0.0,750,2.9296875,750,2.9296875,122.3288000037428,0.1223288000037428,Ultra-low (< 1 KB),Ultra-low power (Cortex-M0+)
+Model B (Rahul Anand Double-DQN),1217,4.75390625,74246,290.0234375,75463,294.77734375,1951.3090000255033,1.9513090000255033,294.8 KB,"Mid-range MCU (Cortex-M4, ESP32)"
+Model C+ (Our Complete Extension),17761,69.37890625,110974,433.4921875,128735,502.87109375,756.502999982331,0.756502999982331,502.9 KB,"Edge SoC (Cortex-M7, Raspberry Pi, RISC-V)"

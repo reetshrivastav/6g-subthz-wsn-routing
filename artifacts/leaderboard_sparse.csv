@@ -1,0 +1,4 @@
+Model,Scenario,PDR (%),Avg Delay (hops),Lifetime (rounds),Lifetime Std,Alive at End,Throughput (pkt/rnd)
+Model A (Base Paper - Alanazi),"Sparse Stress (15 Nodes, 30m)",43.0 ± 25.3,4.06 ± 2.11,31.3 ± 11.0,10.96965511460289,6.7,8.3
+Model B (Senior - Rahul Anand),"Sparse Stress (15 Nodes, 30m)",39.5 ± 21.1,2.02 ± 1.15,26.7 ± 16.3,16.258331197676263,6.0,7.9
+Model C (Extension MVP - Ours),"Sparse Stress (15 Nodes, 30m)",57.7 ± 30.3,1.89 ± 0.55,23.7 ± 6.8,6.8068592855540455,7.7,15.9

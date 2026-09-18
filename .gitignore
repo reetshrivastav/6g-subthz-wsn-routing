@@ -1,0 +1,36 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# LaTeX auxiliary files (keep only .tex and output .pdf)
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Internal study notes, defense guides, and review materials
+docs/
+review2_materials/
+tools/build_presentation_deck.py
+tools/generate_html_docs.py
+tools/build_notebook.py
