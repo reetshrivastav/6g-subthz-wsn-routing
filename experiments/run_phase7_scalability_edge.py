@@ -5,6 +5,10 @@ Phase 7 Benchmark: Massive Network Scalability & Embedded Edge Feasibility Profi
 """
 import os
 import sys
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if _ROOT not in sys.path:
+    sys.path.insert(0, _ROOT)
+os.chdir(_ROOT)
 import time
 import math
 import argparse

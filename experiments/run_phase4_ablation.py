@@ -5,6 +5,10 @@ Under Bursty Traffic Load in 6G WSN.
 """
 import os
 import sys
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if _ROOT not in sys.path:
+    sys.path.insert(0, _ROOT)
+os.chdir(_ROOT)
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 for _p in [
     os.path.join(sys.prefix, "Lib", "site-packages", "torch", "lib"),

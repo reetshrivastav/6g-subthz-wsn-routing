@@ -2,7 +2,6 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange.svg)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 This repository contains the complete open-source research package, discrete-event simulation engine, statistical validation suites, and hardware profiling benchmarks for **Model C+**, an intelligent routing framework engineered for 6G Sub-Terahertz ($0.1\text{–}1.0\,\text{THz}$) multi-hop Wireless Sensor Networks (WSNs).
 
@@ -39,18 +38,19 @@ cn-project/
 │   ├── eval.py                          # Metric computation (PDR, Latency, Gini, FND)
 │   ├── models_link.py                   # MLP & Temporal Transformer link predictors
 │   └── models_rl.py                     # Tabular Q, Double-DQN, and QR-DQN agents
+├── experiments/                         # Research benchmark suites & ablation runners
+│   ├── run_experiments.py               # Canonical baseline comparative benchmark (Phase 3)
+│   ├── run_phase4_ablation.py           # Feature ablation evaluation (Phase 4)
+│   ├── run_phase5_stress_benchmark.py   # 4 physical stress scenarios (Phase 5)
+│   ├── run_phase6_ablation_sweep.py     # Full factorial ablation & CVaR sweep (Phase 6)
+│   ├── run_phase7_scalability_edge.py   # 100-node scalability & MCU edge profiling (Phase 7)
+│   └── run_phase8_dynamic_and_adversarial.py # Dynamic risk scaling & Byzantine defense (Phase 8)
 ├── data/                                # Channel measurements & evaluation logs
 │   └── module1_synthetic_dataset_balanced.csv
+├── artifacts/                           # Benchmark CSV result tables
 ├── figures/                             # 300 DPI publication vector graphics
 │   └── master_synthesis_dashboard.png   # Master evaluation dashboard
-├── run_experiments.py                   # Canonical baseline comparative benchmark (Phase 3)
-├── run_phase4_ablation.py               # Feature ablation evaluation (Phase 4)
-├── run_phase5_stress_benchmark.py       # 4 physical stress scenarios (Phase 5)
-├── run_phase6_ablation_sweep.py         # Full factorial ablation & CVaR sweep (Phase 6)
-├── run_phase7_scalability_edge.py       # 100-node scalability & MCU edge profiling (Phase 7)
-├── run_phase8_dynamic_and_adversarial.py # Dynamic risk scaling & Byzantine defense (Phase 8)
-├── docs/                                # Project reports, slides, and reference papers
-└── tools/                               # Notebook and figure generation utilities
+└── tools/                               # Notebook generation utilities
 ```
 
 ---
@@ -79,19 +79,19 @@ cn-project/
 2. Run individual research phase benchmarks:
    ```bash
    # Phase 3: Canonical Baseline Benchmark (Model A vs Model B vs Model C+)
-   python run_experiments.py
+   python experiments/run_experiments.py
 
    # Phase 5: Four 6G Physical Stress Environments (Obstacles, Mobility, Energy)
-   python run_phase5_stress_benchmark.py
+   python experiments/run_phase5_stress_benchmark.py
 
    # Phase 6: Full Factorial Component Ablation
-   python run_phase6_ablation_sweep.py
+   python experiments/run_phase6_ablation_sweep.py
 
    # Phase 7: Massive Scalability (N=15 to 100 Nodes) & Edge Hardware Profiling
-   python run_phase7_scalability_edge.py
+   python experiments/run_phase7_scalability_edge.py
 
    # Phase 8: Byzantine Black-Hole Defense & Dynamic State-Adaptive Risk
-   python run_phase8_dynamic_and_adversarial.py
+   python experiments/run_phase8_dynamic_and_adversarial.py
    ```
 
 ---
@@ -148,41 +148,9 @@ Profiled on an **ARM Cortex-M7** (STM32H753XI @ 480 MHz, 2 MB Flash, 1 MB SRAM) 
 
 ---
 
-## 7. How to Move This Project to GitHub and Assign a Zenodo DOI
+## Citation
 
-Follow these steps to publish this repository and get a permanent DOI:
-
-### Step 1: Initialize and Push to GitHub
-1. Open terminal inside this project directory:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: 6G Sub-THz WSN Routing Benchmark (Model C+)"
-   ```
-2. Create a new repository on your GitHub account (e.g. `6g-subthz-wsn-routing`).
-3. Connect your local directory and push:
-   ```bash
-   git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/6g-subthz-wsn-routing.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-### Step 2: Mint a Persistent DOI via Zenodo
-1. Go to [https://zenodo.org/](https://zenodo.org/) and log in (you can log in directly using your GitHub account).
-2. Navigate to [Zenodo GitHub Settings](https://zenodo.org/account/settings/github/).
-3. Find your `6g-subthz-wsn-routing` repository in the list and flip the switch to **ON**.
-4. Create a formal Release on GitHub:
-   - In your GitHub repo, click **Releases $\to$ Draft a new release**.
-   - Set tag to `v1.0.0` and title to `v1.0.0: Official Submission Release`.
-   - Click **Publish release**.
-5. Zenodo will automatically archive the repository snapshot and assign a permanent, citable **DOI** (e.g. `10.5281/zenodo.XXXXXXX`).
-6. Copy your DOI and paste it into the paper manuscript and README badge!
-
----
-
-## 8. License & Citation
-
-This project is licensed under the MIT License.
+If you use this benchmark or codebase in your research, please cite:
 
 ```bibtex
 @article{gupta2026subthz,
