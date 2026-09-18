@@ -37,7 +37,7 @@ add_md("""# Master 6G Sub-THz Wireless Sensor Network Routing Benchmark
 
 **Target System:** Distributed 6G Sub-THz ($0.1\text{–}1\,\text{THz}$) / mmWave Wireless Sensor Meshes  
 **Standard Channel Grounding:** ITU-R Recommendation P.676-13 & 3GPP TR 38.901  
-**Reproducibility Package:** [GitHub Repository](https://github.com/autonomous-research-group/6g-subthz-wsn-routing) | **Zenodo Archive DOI:** `10.5281/zenodo.10892341`
+**Reproducibility Package:** [GitHub Repository](https://github.com/reetshrivastav/6g-subthz-wsn-routing) | **Zenodo Archive DOI:** [`10.5281/zenodo.22828532`](https://doi.org/10.5281/zenodo.22828532)
 
 ### Models Evaluated:
 1. **Model A (Base Paper — Alanazi et al., 2025)**: Tabular Q-Routing with SoftMax action selection.

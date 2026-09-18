@@ -2,6 +2,7 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange.svg)](https://pytorch.org/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22828532.svg)](https://doi.org/10.5281/zenodo.22828532)
 
 This repository contains the complete open-source research package, discrete-event simulation engine, statistical validation suites, and hardware profiling benchmarks for **Model C+**, an intelligent routing framework engineered for 6G Sub-Terahertz ($0.1\text{–}1.0\,\text{THz}$) multi-hop Wireless Sensor Networks (WSNs).
 
@@ -148,7 +149,11 @@ Profiled on an **ARM Cortex-M7** (STM32H753XI @ 480 MHz, 2 MB Flash, 1 MB SRAM) 
 
 ---
 
-## Citation
+## Citation & Persistent Archival
+
+The complete reproducibility package is permanently archived on **Zenodo**:
+* **DOI**: [10.5281/zenodo.22828532](https://doi.org/10.5281/zenodo.22828532)
+* **GitHub**: [reetshrivastav/6g-subthz-wsn-routing](https://github.com/reetshrivastav/6g-subthz-wsn-routing)
 
 If you use this benchmark or codebase in your research, please cite:
 
@@ -157,6 +162,7 @@ If you use this benchmark or codebase in your research, please cite:
   title={Intelligent, Uncertainty-Aware and Risk-Sensitive Routing for 6G-Enabled Sub-THz Wireless Sensor Networks},
   author={Gupta, Pranshi and Thakur, Anushka and Gupta, Arnav and Sangwan, Manan and Shrivastav, Reet},
   journal={IEEE Transactions on Wireless Communications / Conference Submissions},
-  year={2026}
+  year={2026},
+  doi={10.5281/zenodo.22828532}
 }
 ```
